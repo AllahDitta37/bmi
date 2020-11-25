@@ -35,18 +35,7 @@ class _InputPageState extends State<InputPage> {
                         //update_color(Gender.male);
                         selectGender = Gender.male;
                       });
-                    },*/
-                  child: Repeate_contanier(
-                    onpressed: () {
-                      setState(
-                            () {
-                          selectGender = Gender.male;
-                        },
-                      );
-                    },
-                    colors: selectGender == Gender.male
-                        ? activationcolor
-                        : deactivationcolor,
+                 lor,
                     cardWidge: RepeateTextIcon(
                       iconData: FontAwesomeIcons.male,
                       Label: 'MALE',

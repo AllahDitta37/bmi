@@ -52,15 +52,7 @@ class Resultfind extends StatelessWidget {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => InputPage()));
                 },
-                child: Container(
-                  child: Center(
-                    child: Text('Re Calculate', style: ConstentTextLabe3),
-                  ),
-                  color: Colors.deepOrange,
-                  height: 60,
-                  width: double.infinity,
-                  margin: EdgeInsets.only(top: 10),
-                ),
+            
               ),
             ),
           ],
