@@ -222,18 +222,3 @@ class _InputPageState extends State<InputPage> {
                 ),
               );
             },
-            child: Container(
-              child: Center(
-                child: Text('Calculate', style: ConstentTextLabe3),
-              ),
-              color: Colors.deepOrange,
-              height: 60,
-              width: double.infinity,
-              margin: EdgeInsets.only(top: 10),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
