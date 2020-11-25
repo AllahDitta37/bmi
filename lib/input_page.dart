@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'Repeate_contanier.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-
+enum Gender {
+  male,
+  female,
+}
 
 class InputPage extends StatefulWidget {
   @override
@@ -199,7 +202,31 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-
+          GestureDetector(
+            onTap: () {
+              Calculation cal =
+              Calculation(heigh: slider_height, weight: slider_weight);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Resultfind(
+                    bmiresult: cal.Calculations(),
+                    final_result: cal.get_result(),
+                    suggestion: cal.get_suggestion(),
+                  ),
+                ),
+              );
+            },
+            child: Container(
+              child: Center(
+                child: Text('Calculate', style: ConstentTextLabe3),
+              ),
+              color: Colors.deepOrange,
+              height: 60,
+              width: double.infinity,
+              margin: EdgeInsets.only(top: 10),
+            ),
+          ),
         ],
       ),
     );
